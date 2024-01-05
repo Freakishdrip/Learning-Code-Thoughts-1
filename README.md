@@ -45,13 +45,3 @@ If you are having trouble finding how the code is changed, there is no shame in 
 While my life has had its twists and turns in my career path, I really feel a deeper connection to this. It is stimulating, enagaging, and I can always learn more. My previous jobs of being a door to door salesman and being a trucker was atleast engaging, I never felt like it was the right place for me to be. 
 
 While coding has it challenges it can be rewarding as well. The feeling of finally seeing the finished project get made and work exactly how you wanted it too feels incredible. Like seeing your baby take steps for the first time. Deciding to learn coding is very stressful but exciting time in my life. The journey I have started with this will hopefully change the world for the better. My end goal for coding is to learn how to code robots that will help clean up our streets, our rivers, our oceans, and our lives. 
-
-
-
-
-
-
-
-
-
-It is very exciting to have finally taken this leap in life. From salesman of 3 years to trucker to coder life has been a journey so far. I am hoping for the pacing to pick up here
