@@ -30,11 +30,11 @@ The context of this code is that we are adding a function that will take user in
                 console.log(query)
                 console.log(data)
                 let searchWord = query.toLowerCase()
-                        let filteredProducts = data.filter(product =>
-                            product["product_type"].toLowerCase().includes(searchWord) ||   
-                            product.brand.toLowerCase().includes(searchWord) || 
-                            product.name.toLowerCase().includes(searchWord) ||
-                            product.brand.toLowerCase().includes(searchWord)
+                        let filteredProducts = data?.filter(product =>
+                            product["product_type"]?.toLowerCase().includes(searchWord) ||   
+                            product.brand?.toLowerCase().includes(searchWord) || 
+                            product.name?.toLowerCase().includes(searchWord) ||
+                            product.brand?.toLowerCase().includes(searchWord)
         )
         console.log(filteredProducts)
         displayProducts(filteredProducts);
