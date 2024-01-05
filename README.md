@@ -10,41 +10,37 @@ Alternatively, the process of having to literally describe every single step pre
 
 One of the first ungoogle-able problems I had with my website was in this snippet of code below.
 
-function searchProducts(data, query) {
-        console.log(query)
-        console.log(data)
-        let searchWord = query.toLowerCase()
-        let filteredProducts = data.filter(product =>
-            product["product_type"].toLowerCase().includes(searchWord) ||   
-            product.brand.toLowerCase().includes(searchWord) || 
-            product.name.toLowerCase().includes(searchWord) ||
-            product.brand.toLowerCase().includes(searchWord)
+        function searchProducts(data, query) {
+                console.log(query)
+                console.log(data)
+                let searchWord = query.toLowerCase()
+                        let filteredProducts = data.filter(product =>
+                            product["product_type"].toLowerCase().includes(searchWord) ||   
+                            product.brand.toLowerCase().includes(searchWord) || 
+                            product.name.toLowerCase().includes(searchWord) ||
+                            product.brand.toLowerCase().includes(searchWord)
         )
-
         console.log(filteredProducts)
-
         displayProducts(filteredProducts);
-    }
+        }
 
 The context of this code is that we are adding a function that will take user input from a search bar, sort what the user is looking for, then pass that information to the display function. The trouble with this begins at line 17. Every single time I tried to run this it was giving the error of .filter is not defined. For more experinced coders this should be a moderately easy solution to find. Unfortunately, Google was no help in this situation, ChatGDP couldn't help find a solution. For this was the ultimate error, the logic works however this function did not work! Here's the solution to the code. 
 
-function searchProducts(data, query) {
-        console.log(query)
-        console.log(data)
-        let searchWord = query.toLowerCase()
-        let filteredProducts = data?.filter(product =>
-            product["product_type"]?.toLowerCase().includes(searchWord) ||   
-            product.brand?.toLowerCase().includes(searchWord) || 
-            product.name?.toLowerCase().includes(searchWord) ||
-            product.brand?.toLowerCase().includes(searchWord)
+        function searchProducts(data, query) {
+                console.log(query)
+                console.log(data)
+                let searchWord = query.toLowerCase()
+                        let filteredProducts = data.filter(product =>
+                            product["product_type"].toLowerCase().includes(searchWord) ||   
+                            product.brand.toLowerCase().includes(searchWord) || 
+                            product.name.toLowerCase().includes(searchWord) ||
+                            product.brand.toLowerCase().includes(searchWord)
         )
-
         console.log(filteredProducts)
-
         displayProducts(filteredProducts);
-    }
+        }
 
-If you are having trouble finding how the code is changed, there is no shame in it. The solution was to put the "?" after the item it was looking for. The reason that the question marks are needed is because while the logic looks good the code is not able to move forward if it cannot find that specific item. 
+If you are having trouble finding how the code is changed, there is no shame in it. The solution was to put the "?" after the item it was looking for. Because I was using a boolean sorting method I had to add in a ternenary operator that returns a boolean value. The boolean value if true continues on to the rest of the lines of code if not it returns null or undefined.
 
 While my life has had its twists and turns in my career path, I really feel a deeper connection to this. It is stimulating, enagaging, and I can always learn more. My previous jobs of being a door to door salesman and being a trucker was atleast engaging, I never felt like it was the right place for me to be. 
 
