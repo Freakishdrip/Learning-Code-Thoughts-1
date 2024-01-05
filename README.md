@@ -1,4 +1,4 @@
-# Learning-Code-Thoughts-1 3rd first week
+# Learning-Code-Thoughts-1, First Week
 
 The first week of the coding bootcamp had a great start. We went over many coding concepts to help think more programmically. We started with easier to understand languages HTML, JavaScript, and CSS. I had taken a similar coding course at Harvard as well as having a hobby of working with electricity. So many of these concepts and logic gates were not new to me. The syntax of how those languages implement the logic flow so far is my biggest trouble area. As well as the feeling of confusion when theoretically the code should work, but doesn't (because of a missing comma or typo), is universally frustrating. However, I am very happy with how professional and knowledgeable the instructors are. 
 
